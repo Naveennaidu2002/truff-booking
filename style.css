@@ -1,0 +1,99 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.hero {
+    background: url('cricket-stadium.jpg') no-repeat center center/cover;
+    color: rgb(16, 13, 13);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: rgb(14, 9, 9);
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.hero-image {
+    width: 100px; /* Adjust size as needed */
+    height: 50;
+    margin-top: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+    padding: 20px;
+    background-color: #eaeaea;
+    border-radius: 8px;
+}
+
+.feature h3 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

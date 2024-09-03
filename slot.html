@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Booking - Online Cricket Ticket Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .booking-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .booking-container h2 {
+            margin-top: 0;
+            color: #000;
+        }
+        .booking-container label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        .booking-container select,
+        .booking-container input[type="date"],
+        .booking-container input[type="time"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .booking-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .booking-container button:hover {
+            background-color: #333;
+        }
+        .booking-container p {
+            margin-top: 20px;
+            color: #000;
+        }
+        .booking-container a {
+            color: #000;
+            text-decoration: none;
+        }
+        .booking-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="booking-container">
+        <h2>Book Your Slot</h2>
+        <form action="/book-slot" method="POST">
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Select Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="slot">Select Slot:</label>
+            <select id="slot" name="slot" required>
+                <option value="">--Select Slot--</option>
+                <option value="slot1">Slot 1</option>
+                <option value="slot2">Slot 2</option>
+                <option value="slot3">Slot 3</option>
+                <!-- Add more slots as needed -->
+            </select>
+
+            <button type="submit">Book Slot</button>
+        </form>
+        <p>Back to <a href="index.html">Home</a></p>
+    </div>
+</body>
+</html>
